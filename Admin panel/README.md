@@ -1,4 +1,4 @@
-# Hotel-Room-Management-Admin-App
+# Hotel-Room-Management-Admin-Panel
 
 This is Hotem Room Bokking Management website specifically for admin/manager of the Hotel.
 This site made in MERN Stack architecture.
