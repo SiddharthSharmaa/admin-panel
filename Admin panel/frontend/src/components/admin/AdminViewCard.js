@@ -5,7 +5,7 @@ import { roomActions } from '../../store/room-slice'
 import img1 from '../../image/img1.jpg'
 
 function AdminViewCard(props) {
-    const { _id } = props.item
+    const { _id,startTime } = props.item
     const dispatch = useDispatch()
     const navigate = useNavigate()
     const onEditHandler = () => {
@@ -14,6 +14,19 @@ function AdminViewCard(props) {
     }
 
     const onDeleteHandler = async () => {
+        let start = Date.parse(startTime);
+        let timeDiff=(start-Date.now())/(1000*60*60);
+        let refund="Hello";
+        if(timeDiff>48){
+            refund="Complete Refund";
+        }
+        else if(timeDiff>=24 && timeDiff<=48){
+            refund="50% Refund";
+        }
+        else{
+            refund="No refund";
+        }
+        alert(refund);
         const cancelBooking = await axios.delete('http://localhost:3001/user/cancelBooking', {
             data: {
                 _id
