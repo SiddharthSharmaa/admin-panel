@@ -1,6 +1,6 @@
 # Hotel-Room-Management-Admin-Panel
 
-This is Hotem Room Bokking Management website specifically for admin/manager of the Hotel.
+This is Hotel Room Booking Management website specifically for admin/manager of the Hotel.
 This site made in MERN Stack architecture.
 
 - Admin can book rooms and if room was booked for date already then it will show room booked otherwise it will be booked.
